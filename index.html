@@ -18,56 +18,50 @@
     <!-- This is the body of my website, where I write actual HTML -->
 
     <h1>Data Visualization - Final Project</h1>
-    <p>by Renata Benigno</p>
+   <h1>by Renata Benigno</h1>
     
 
     	<p>For my Data Visualization Final Project, I used a NYC Subway dataset. The date set included information about each subway station located in New York City, such as which subway lines pass through it, Annual Ridership and State of Good Repair, a jargon used by the MTA (Metropolitan Transportation Authority) to define which stations are in good conditions of repair and maintenance.</p> 
 
 <p>State of Good Repair = defined by the percentage of structural components located in a certain subway station that are currently in good conditions.</p>
 
-<p>Here are some of the questions I explored with the dataset I had.
-1) What was the Annual Ridership of each subway line, by borough, in 2014?</p>
+<p>Here are some of the questions I explored with the dataset I had.</p>
+<p>1) What was the Annual Ridership of each subway line, by borough, in 2014?</p>
 <div>
-        <p>Chart 01</p>
         <img alt="Chart 1" class="full-width" src="images/Chart1_Ridership.png">
       </div>
 
 <p>I was interested in exploring the data related to the stations' state of good repair, so first I created a map in QGIS, in order to visualize the data I had. I overlayed the original dataset with a shapefile of NYC Neighborhoods and with NYC Median Annual Household Income by Census Tract, and then I exported the map to CartoDB.</p>
 <div>
-        <p>Map 01 - Subway Stations State of Good Repair vs Neighborhood Income</p>
+
         <img alt="Map_State_Good_Repair" class="full-width" src="images/Map1_SGR.png">
       </div>
 
 <p>Here is a <a href="http://bit.ly/1HEP7gn"> CartoDB Map </a> I created to show this data.</p>
 
-<p>And then I created this chart to answer this question:
-2) What is the percentage of stations not in State of Good Repair in each Borough?</p>
+<p>And then I created this chart to answer this question:</p>
+<p>2) What is the percentage of stations not in State of Good Repair in each Borough?</p>
 <div>
-        <p>Chart 02</p>
         <img alt="Chart 2" class="full-width" src="images/Chart2_SGR_Boro.png">
       </div>
 
 <p>3) What is the range of income along the subway lines, by borough?
 Observations: although this chart might suggest BLABLABLA, it says more about the Income in boroughs than about the areas surrounding the subway.</p>
  <div>
-        <p>Chart 03</p>
         <img alt="Chart 3" class="full-width" src="images/Chart3_Income_Boro.png">
       </div>
 
 <p>4) Is there any relation between bad conditions (not in SGR) and the income of the boroughs?
 Observations: I expected to find a relation such as "the lower the income, the less maintenance a certain station will get". However, there is no such relation, neither when you show all of the subway stations of NYC system (chart 04) or when you split them by Borough (chart 05).</p>
 <div>
-        <p>Chart 04</p>
         <img alt="Chart 4" class="full-width" src="images/Chart4_SGR.png">
 
-        <p>Chart 05</p>
         <img alt="Chart 5" class="full-width" src="images/Chart5_SGR_Boro.png">
       </div>
 
 <p>5) What if we show the Median Income along each subway line?
 Observations: This chart shows how there is a great discrepancy of income along subway lines, even when located in the same boroughs. Nevertheless, Manhattan shows a range of income that goes way higher than the other boroughs. </p>
     	<div>
-        <p>Chart 06</p>
         <img alt="Chart 6" class="full-width" src="images/Chart6_Income_Line.png">
       </div>
 
